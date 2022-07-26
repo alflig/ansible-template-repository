@@ -1,0 +1,10 @@
+---
+- hosts: localhost
+  become: true
+  become_user: root
+  roles:    
+    - singleplatform-eng.users
+    - weareinteractive.sudo
+  vars_files:
+    - ../group_vars/localhost/ansible-user.yml
+

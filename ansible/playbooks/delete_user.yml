@@ -1,0 +1,12 @@
+---
+- hosts: localhost  
+  become: true
+  become_user: root
+  roles: 
+   - singleplatform-eng.users
+  vars: 
+   users_deleted:
+    - username: ansible-user
+      uid: 1001 
+      remove: yes
+      force: yes

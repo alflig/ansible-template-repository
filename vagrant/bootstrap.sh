@@ -19,10 +19,10 @@ echo -e "192.168.10.3 controller \n192.168.10.4 managed1\n192.168.10.5 managed2"
 
 # Installing necessary packages 
 
-sudo apt update && sudo apt -y install curl wget net-tools iputils-ping python3-pip sshpass acl
+sudo apt update && sudo apt -y install curl wget net-tools iputils-ping python3-pip sshpass
 
 # Install ansible using pip only in controller node
 
 if [[ $(hostname) = "controller" ]]; then
-  sudo pip3 install ansible 
+  sudo pip3 install ansible
 fi

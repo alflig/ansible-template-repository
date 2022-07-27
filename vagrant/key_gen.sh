@@ -18,14 +18,5 @@ PROJECT_DIRECTORY="/home/vagrant/ansible_project/"
 mkdir -p $PROJECT_DIRECTORY
 cd $PROJECT_DIRECTORY
 
-# Creating the inventory file for all 3 nodes to run some adhoc command.
 
-echo -e "controller\n\n[ubuntu1]\nmanaged1\n\n[ubuntu2]\nmanaged2" > inventory
-echo -e "[defaults]\ninventory = inventory" > ansible.cfg
-echo -e "-------------------- RUNNING ANSBILE ADHOC COMMAND - UPTIME ------------------------------"
-echo
 
-# running adhoc command to see if everything is fine
-
-ansible all -i inventory -m "shell" -a "uptime"
-echo

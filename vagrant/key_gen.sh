@@ -11,12 +11,7 @@ for val in controller managed1 managed2; do
 	sshpass -p 'vagrant' ssh-copy-id -o "StrictHostKeyChecking=no" vagrant@$val 
 done
 
-# CREATE THE INVENTORY FILE
 
-PROJECT_DIRECTORY="/home/vagrant/ansible_project/"
-
-mkdir -p $PROJECT_DIRECTORY
-cd $PROJECT_DIRECTORY
 
 
 

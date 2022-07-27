@@ -24,5 +24,5 @@ sudo apt update && sudo apt -y install curl wget net-tools iputils-ping python3-
 # Install ansible using pip only in controller node
 
 if [[ $(hostname) = "controller" ]]; then
-  sudo pip3 install ansible
+  sudo pip3 install ansible 
 fi

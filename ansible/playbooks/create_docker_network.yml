@@ -1,0 +1,10 @@
+---
+- hosts: nodes
+  become: true
+
+  tasks:
+  - name: Create a network
+    docker_network:
+      name: traefik_network
+ 
+ 

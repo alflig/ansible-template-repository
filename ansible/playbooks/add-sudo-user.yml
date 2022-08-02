@@ -1,8 +1,18 @@
 ---
-- hosts: localhost
+- hosts: all
   become: true
-  become_user: root
-  roles:    
+  roles:
     - weareinteractive.sudo
-  vars_files:
-    - ../group_vars/localhost/ansible-user.yml
+  vars:
+    sudo_defaults:
+      - defaults: env_reset
+      - defaults: secure_path="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
+      - name: 'vagrant'
+        defaults: '!requiretty'
+    sudo_users:
+      - name: 'vagrant'
+        nopasswd: yes
+        commands:
+          - '/usr/bin/ls'
+          - '/usr/bin/df'
+          - '/usr/bin/mailq'

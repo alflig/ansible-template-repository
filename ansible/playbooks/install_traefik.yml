@@ -1,0 +1,10 @@
+---
+- hosts: node1
+  become: true
+  become_user: vagrant
+
+  roles: 
+    - arillso.traefik
+  
+  vars_files:
+    - ../group_vars/install_traefik.yml

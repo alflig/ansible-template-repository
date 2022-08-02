@@ -1,0 +1,9 @@
+traefik_confkey_api:
+  insecure: true
+  dashboard: true
+traefik_ports:
+  - '80:80'
+  - '443:443'
+  - '8080:8080'
+
+

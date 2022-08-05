@@ -1,13 +1,14 @@
-**1. CD into /vagrant and type vagrant up**
 
-**2.  SSH into the controller node**
+**1. CD into /vagrant and type vagrant up**
+    $ cd vagrant && vagrant up 
+
+**2. SSH into the controller node**
     $ vagrant ssh controller   
-     
-    **Run script to create and distrubute keys**
+    
+  3. **Run script to create and distrubute keys**
     $ cd /home/vagrant/         
 
-
-   **Run script to create and distrubute keys**
+  4.**Run script to create and distrubute keys**
     $ bash key_gen.sh           
 
  

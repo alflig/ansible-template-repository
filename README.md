@@ -14,4 +14,4 @@
  
 **3. Add vagrant as sudo user to run playbooks as vagrant**  <br />
    cd into etc/ansible/playbooks in the controller node to add vagrant as sudo user  <br />
-   $ ansible-playbook -i hosts.ini add_sudo_user.yml
+   $ ansible-playbook -i hosts.ini add-sudo-user.yml

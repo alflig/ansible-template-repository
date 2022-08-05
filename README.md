@@ -1,5 +1,5 @@
 
-**1. CD into /vagrant and type vagrant up**
+**1. CD into /vagrant and type vagrant up** /n/
     $ cd vagrant && vagrant up 
 
 **2. SSH into the controller node**

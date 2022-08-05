@@ -8,3 +8,6 @@
   
   vars_files:
     - ../group_vars/install_traefik.yml
+
+
+## runs traefik on port   http://192.168.10.4:8080/dashboard#/
